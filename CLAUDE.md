@@ -1,4 +1,6 @@
-# Notes for Claude
+# Project notes for Claude
+
+Shared lab standards are in `.claude/rules/` (see `STANDARDS.md`). Below are the facts specific to this course.
 
 This repository is a course website (Jekyll, Just the Docs remote theme,
 GitHub Pages "deploy from a branch") that teaches biologists with no coding

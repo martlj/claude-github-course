@@ -18,5 +18,7 @@ permalink: /reference/troubleshooting/
 | GitHub Desktop says "rejected / fetch first" | Someone (or Claude) changed GitHub since you last pulled. **Fetch origin → Pull**, then push again |
 | "Merge conflict" | The same lines changed in two places. GitHub shows both versions. Keep the right one, or ask Claude to resolve it and explain |
 | Fiji: *Unrecognized command* | The command doesn't exist or needs a plugin. Use the Macro Recorder to get the exact command name |
+| Standards check: "Shared standard file edited locally" | Someone changed a file in `.claude/rules/` or `.claude/skills/`. Undo it, and put project-specific exceptions in `CLAUDE.md` instead |
+| Standards check: required file missing | Ask Claude to create it, e.g. *"Add a CONTRIBUTING.md from the research standards"* (or `/update-standards`) |
 | Tests fail after I added a macro | Read the message. It's usually the missing header or a hard-coded path |
 | I committed a data file by mistake | Remove it and add a `.gitignore` rule. If it's sensitive or large, **tell the course organiser**, because it's still in the history and needs cleaning |

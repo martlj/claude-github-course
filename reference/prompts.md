@@ -9,10 +9,19 @@ permalink: /reference/prompts/
 
 Copy, paste, adapt.
 
+## Skills (Claude Code: type `/` to see them all)
+
+`/start-analysis` · `/new-fiji-macro` · `/new-python-script` · `/add-known-answer-test` ·
+`/log-decision` · `/review-changes` · `/prepare-release` · `/apply-standards` ·
+`/update-standards` · `/progress-summary`
+
 ## Getting started in a repository
 
 - *Read the README and CLAUDE.md and summarise what this repository does and its rules.*
 - *Explain the folder structure to me as if I've never programmed.*
+- *What standards are you following here, and where do they come from?*
+- *Install the research standards into this repository with the analysis profile, then /apply-standards.*
+- *Add an exception to CLAUDE.md: …*
 
 ## Asking for a change
 

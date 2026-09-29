@@ -1,10 +1,10 @@
 ---
-title: 7. Image analysis with Claude
-nav_order: 7
-permalink: /07-image-analysis/
+title: 8. Image analysis with Claude
+nav_order: 8
+permalink: /08-image-analysis/
 ---
 
-# 7. Image analysis with Claude
+# 8. Image analysis with Claude
 {: .no_toc }
 
 Claude is good at writing Fiji macros and Python scripts. It **can't see your
@@ -18,6 +18,10 @@ about getting good code *and* knowing it's right.
 ---
 
 ## The workflow
+
+The shared standards give each step a skill (see [module 7]({{ '/07-standards-files/' | relative_url }})):
+`/start-analysis` → `/new-fiji-macro` or `/new-python-script` → `/add-known-answer-test`
+→ `/log-decision` → `/review-changes`.
 
 1. **Describe the biology and the images** precisely (use the *Analysis task* issue template).
 2. **Ask for a plan** before any code.
@@ -52,9 +56,8 @@ If you already know which Fiji menu commands you'd click, record them:
 the recording to Claude:
 
 > Here's a recording of what I do by hand in Fiji. Turn it into a macro in
-> fiji/macros/count_puncta.ijm that processes every .czi file in a folder,
-> following the conventions in CLAUDE.md (header, #@ parameters, batch mode,
-> CSV output). Explain each step.
+> fiji/macros/count_puncta.ijm that processes every .czi file in a folder.
+> Follow our standards and explain each step.
 
 This is the most reliable route, because the commands in a recording are
 guaranteed to exist in *your* Fiji.
@@ -108,8 +111,8 @@ than one.
 
 ## 6. Record the decision
 
-> Add an entry to docs/decisions.md for today explaining the puncta detection
-> parameters we chose and how we checked them. Update docs/methods.md too.
+> /log-decision for the puncta detection parameters we chose and how we checked
+> them. Update docs/methods.md too.
 
 When you write the paper, the methods section is already half-written, and
 you can point reviewers to the exact tagged version of the code.

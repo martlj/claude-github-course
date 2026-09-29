@@ -15,10 +15,11 @@ permalink: /instructor/
 ## One-off preparation
 
 1. **Create a GitHub organisation** for the course or the institute (e.g. `crick-claude-course`).
-   Put the three repositories in it:
+   Put the four repositories in it:
    - `claude-github-course` (this site)
    - `personal-website-template`
    - `analysis-repo-template`
+   - `research-standards` (the shared rules and skills). **Tag a release** `v1.0.0`, because projects are notified of new tags
 2. In each template repository, go to **Settings** and tick **Template repository**.
 3. Replace every `YOUR-ORG` in this course (`_config.yml` and the module pages).
    Ask Claude: *"Replace YOUR-ORG with crick-claude-course throughout this repository."*
@@ -43,7 +44,7 @@ permalink: /instructor/
 | Session | Content | Notes |
 |---------|---------|-------|
 | **Session 1** (3 h) | Modules 2–5 | Break after module 3 once everyone has a live site. That's the morale boost |
-| **Session 2** (3 h) | Modules 6–8 | Ask people to bring 2–3 of their own images (non-sensitive) |
+| **Session 2** (3 h) | Modules 6–9 | Ask people to bring 2–3 of their own images (non-sensitive) |
 | **Follow-up** (1 h, 2 weeks later) | Drop-in clinic | Look at real repos and problems |
 
 ## Common snags
@@ -57,6 +58,16 @@ permalink: /instructor/
 | Claude invents publication details | Deliberate lesson in module 4. Stress verification |
 | Fiji macro fails on `.czi` | Needs Bio-Formats (`run("Bio-Formats Importer", ...)`), which Fiji includes. Suggest the Macro Recorder |
 | Link checker flags external sites (rate limits) | Rerun. `429` is already accepted, and persistent offenders go in `.lycheeignore` |
+
+## Maintaining the standards
+
+- `research-standards` is the single source of truth. Change rules there, never in the templates.
+- To release: bump `VERSION`, update headers and `CHANGELOG.md`, run `python make_chat_bundle.py`, tag `vX.Y.Z`
+  (or ask Claude, since the kit's own `CLAUDE.md` describes the steps).
+- Then update the two templates with `python research-standards/install.py <template>` (or
+  `/update-standards` in each). Existing projects get an issue offering the update within a week.
+- Collect suggestions from participants as issues on `research-standards`. It's a good way
+  to show collaborative maintenance in action.
 
 ## Demonstrations that work well
 

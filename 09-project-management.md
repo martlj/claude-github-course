@@ -1,10 +1,10 @@
 ---
-title: 8. Project management
-nav_order: 8
-permalink: /08-project-management/
+title: 9. Project management
+nav_order: 9
+permalink: /09-project-management/
 ---
 
-# 8. Project management with Issues and Projects
+# 9. Project management with Issues and Projects
 {: .no_toc }
 
 The same tools that track code can track your research tasks, keeping each

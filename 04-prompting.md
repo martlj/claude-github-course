@@ -34,7 +34,7 @@ Describe the change you want, let Claude make it, check the diff, commit.
 2. Select your `YOUR-USERNAME.github.io` repository. If it isn't listed, add it to
    the repositories the Claude GitHub app may access.
 3. Type your request (see the exercises below) and send it.
-4. Claude reads the repository, including `CLAUDE.md`, makes the change on a new
+4. Claude reads the repository, including `CLAUDE.md` and the shared rules in `.claude/`, makes the change on a new
    **branch**, and explains what it did.
 5. Review the changes it shows you. When you're happy, ask it to **create a pull request**
    (or click the button offered).
@@ -74,8 +74,9 @@ Do them in order. Each one teaches a different kind of change.
 > easy to read.
 
 **Check:** the diff should only touch the variables at the top of
-`style.css`. Why? Because `CLAUDE.md` tells Claude to use them. Open
-`CLAUDE.md` and find that rule.
+`style.css`. Why? Because a rule tells Claude to use them. Open
+`.claude/rules/topic-websites.md` and find it. There's more about these rule files in
+[module 7]({{ '/07-standards-files/' | relative_url }}).
 
 ### 2. Change the fonts and layout
 

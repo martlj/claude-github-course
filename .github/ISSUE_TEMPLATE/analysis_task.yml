@@ -1,0 +1,45 @@
+name: Analysis task
+description: A new analysis, or a change to an existing one
+title: "[Analysis] "
+labels: ["analysis"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Biological question
+      description: What are you trying to find out?
+      placeholder: e.g. Does treatment X change nuclear size in HeLa cells?
+    validations:
+      required: true
+  - type: textarea
+    id: images
+    attributes:
+      label: The images
+      description: Dimensions (2D/3D/time), channels, pixel size, file format, where they are stored.
+      placeholder: |
+        2D, 3 channels (DAPI, GFP, mCherry), 0.1 µm/px, .czi
+        Stored at: ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: What result do you want?
+      description: Numbers per cell? Per image? A figure? What would a correct answer look like?
+    validations:
+      required: true
+  - type: textarea
+    id: check
+    attributes:
+      label: How will we know it's right?
+      description: e.g. hand counts on 5 images, a known positive control, expected range.
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Steps
+      description: Break it down into a checklist, and tick items off as you go.
+      value: |
+        - [ ] Write / adapt the macro or script
+        - [ ] Test on sample data with a known answer
+        - [ ] Record parameter choices in docs/decisions.md
+        - [ ] Run on the full dataset

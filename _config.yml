@@ -21,6 +21,8 @@ aux_links:
     - "https://github.com/YOUR-ORG/personal-website-template"
   "Analysis template":
     - "https://github.com/YOUR-ORG/analysis-repo-template"
+  "Research standards":
+    - "https://github.com/YOUR-ORG/research-standards"
 
 footer_content: "Materials licensed CC BY 4.0. Found a mistake? <a href=\"https://github.com/YOUR-ORG/claude-github-course/issues\">Open an issue</a>."
 
@@ -44,6 +46,9 @@ callouts:
 exclude:
   - README.md
   - CLAUDE.md
+  - CLAUDE.local.md
+  - STANDARDS.md
+  - CONTRIBUTING.md
   - .lycheeignore
   - lychee
   - _check

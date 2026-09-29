@@ -1,0 +1,58 @@
+# ------------------------------------------------------------------
+# AUTOMATED CHECK: does this repository follow the shared standards?
+# (Part of research-standards. Don't edit in a project.)
+#
+# On every push and pull request it checks that:
+#   - required files exist (README, CLAUDE.md, CONTRIBUTING, LICENSE, ...)
+#   - the shared rules in .claude/rules/ haven't been edited locally
+#   - no raw microscope files, large files or hard-coded personal paths
+# Every Monday it also checks whether a newer version of the standards
+# has been released and, if so, opens an issue suggesting an update.
+# ------------------------------------------------------------------
+name: Standards
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "30 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the files from the repository
+        uses: actions/checkout@v4
+
+      - name: Check the repository against the standards
+        run: python3 .github/scripts/check_standards.py
+
+      - name: Is a newer version of the standards available?
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cfg=.claude/research-standards.yml
+          source=$(grep -E '^source:' "$cfg" | sed -E 's/^source: *"?([^" ]*)"?.*/\1/')
+          current=$(grep -E '^version:' "$cfg" | sed -E 's/^version: *"?([^" ]*)"?.*/\1/')
+          case "$source" in ""|*YOUR-ORG*) echo "No upstream source configured"; exit 0;; esac
+          latest=$(git ls-remote --tags --refs "$source" 'v*' 2>/dev/null \
+                   | sed 's#.*refs/tags/v##' | sort -V | tail -1)
+          echo "Installed: $current  Latest: ${latest:-none}"
+          if [ -n "$latest" ] && [ "$latest" != "$current" ] && \
+             [ "$(printf '%s\n%s\n' "$current" "$latest" | sort -V | tail -1)" = "$latest" ]; then
+            gh label create standards --color 0e8a16 --force \
+              --description "Shared research standards"
+            if [ -z "$(gh issue list --label standards --state open --search "v$latest" --json number --jq '.[0].number')" ]; then
+              gh issue create --label standards \
+                --title "Research standards v$latest available (installed: v$current)" \
+                --body "A newer version of the shared standards has been released: $source/releases/tag/v$latest
+
+          To update, ask Claude: **/update-standards**. Claude will show what changes and open a pull request."
+            fi
+          fi

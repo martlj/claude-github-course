@@ -4,3 +4,5 @@ _site/
 lychee/
 .DS_Store
 _check/
+CLAUDE.local.md
+.claude/settings.local.json

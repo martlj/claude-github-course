@@ -49,7 +49,8 @@ internal links in this template will break. The link checker in module 5 will sp
 | `research.md`, `publications.md`, `code.md` | The other pages |
 | `_data/navigation.yml` | The menu |
 | `assets/css/style.css` | Colours, fonts and layout |
-| `CLAUDE.md` | Instructions that Claude reads before changing anything |
+| `CLAUDE.md` | Facts about your site that Claude reads before changing anything |
+| `.claude/`, `STANDARDS.md` | Shared lab standards that Claude follows (module 7) |
 
 Files ending `.md` are **Markdown**: plain text with light formatting
 (`**bold**`, `*italic*`, `- lists`, `## headings`). GitHub turns them into web pages.

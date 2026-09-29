@@ -21,7 +21,8 @@ do the fiddly parts. No coding experience needed.
 
 1. **A personal research website** at `https://YOUR-USERNAME.github.io`, which you'll change by asking Claude.
 2. **An analysis repository** for your Fiji macros and Python scripts, laid out the way good computational labs do it, with automated tests.
-3. **The habits behind version control**: commits, history, pull requests, issues. You'll also know how to get Claude to follow them.
+3. **Shared standards files** that make Claude follow the same good practice in every project, for you and your collaborators.
+4. **The habits behind version control**: commits, history, pull requests, issues. You'll also know how to get Claude to follow them.
 
 ## Course outline
 
@@ -33,15 +34,17 @@ do the fiddly parts. No coding experience needed.
 | [4. Changing things with Claude]({{ '/04-prompting/' | relative_url }}) | Change colours, layout and content by describing what you want | 40 min |
 | [5. Testing]({{ '/05-testing/' | relative_url }}) | Break a link on purpose and watch the automated test catch it | 25 min |
 | [6. Your analysis repository]({{ '/06-analysis-repo/' | relative_url }}) | Set up a repository for your macros and scripts | 30 min |
-| [7. Image analysis with Claude]({{ '/07-image-analysis/' | relative_url }}) | Write and test a Fiji macro together with Claude | 45 min |
-| [8. Project management]({{ '/08-project-management/' | relative_url }}) | Track your work with Issues and a Project board | 25 min |
+| [7. Standards files]({{ '/07-standards-files/' | relative_url }}) | Learn how a few Markdown files make Claude follow good practice, in every project and for every collaborator | 40 min |
+| [8. Image analysis with Claude]({{ '/08-image-analysis/' | relative_url }}) | Write and test a Fiji macro together with Claude | 45 min |
+| [9. Project management]({{ '/09-project-management/' | relative_url }}) | Track your work with Issues and a Project board | 25 min |
 
-Modules 1–5 make a good first half-day session, and 6–8 a second.
+Modules 1–5 make a good first half-day session, and 6–9 a second.
 
 {: .concept }
-> Throughout the course, **Claude writes the code, and you stay the scientist.**
-> You decide what's wanted, check that the result is right, and keep a clean
-> record of what changed and why. Git and GitHub are what make that record possible.
+> Throughout the course you make changes **by asking Claude**. You won't need to
+> learn HTML, CSS or programming. Your job is to say clearly what you want, check
+> the result, and keep a clean record of what changed and why. Git and GitHub
+> make that record possible. **Claude writes the code, and you stay the scientist.**
 
 ## Two ways to work with Claude
 

@@ -30,5 +30,9 @@ permalink: /reference/glossary/
 | **YAML (.yml)** | A simple settings-file format of `key: value` lines. Indentation matters |
 | **`.gitignore`** | A list of files Git should never track (e.g. data, results) |
 | **Test** | Code that checks other code gives the right answer |
-| **CLAUDE.md** | A file of instructions Claude reads before working in a repository |
+| **CLAUDE.md** | Project facts and exceptions that Claude reads at the start of every session |
+| **CLAUDE.local.md** | Your personal instructions for Claude. Not shared (Git ignores it) |
+| **Rule** (`.claude/rules/`) | A shared standard that Claude loads automatically, sometimes only for certain file types |
+| **Skill** (`.claude/skills/`) | A step-by-step procedure Claude follows when relevant, or when you type `/name` |
+| **Research standards** | Our shared set of rules, skills, templates and checks, copied into every project |
 | **Release / tag** | A named version (e.g. `v1.0.0`), such as the one used in a paper |

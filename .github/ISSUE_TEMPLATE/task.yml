@@ -1,0 +1,19 @@
+name: Task or idea
+description: A to-do, improvement or idea (website change, documentation, figure...)
+labels: ["task"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: How will we know it's done?
+      placeholder: e.g. The Teaching page appears in the menu and the link check passes.
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline (if any)

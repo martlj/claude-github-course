@@ -79,7 +79,7 @@ the site to `.lycheeignore`.
 
 {: .warning }
 Don't "fix" a failing test by switching it off. Claude has been told not to do
-this (see `CLAUDE.md`), and you shouldn't either. A test you've silenced can't
+this (see `.claude/rules/05-testing.md`), and you shouldn't either. A test you've silenced can't
 protect you.
 
 ## Beyond links
@@ -90,3 +90,6 @@ your analysis repository comes with tests that check:
 - the nuclei-counting script finds **exactly 6 nuclei** in a synthetic image where we *know* there are 6;
 - every Fiji macro has a proper header describing what it does;
 - nobody has accidentally committed a 2 GB `.czi` file.
+
+Every repository also has a **Standards** check, which makes sure the shared
+standards files are present and unedited ([module 7]({{ '/07-standards-files/' | relative_url }})).

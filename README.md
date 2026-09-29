@@ -9,12 +9,14 @@ A hands-on course teaching researchers with little or no coding experience to:
 3. change it by prompting Claude,
 4. use automated tests (link checking) that raise errors and open GitHub Issues,
 5. keep Fiji macros and Python scripts in a well-structured, tested analysis repository,
-6. manage research tasks with Issues and Projects.
+6. use shared standards files so Claude follows the same good practice in every project and for every collaborator,
+7. manage research tasks with Issues and Projects.
 
 Companion templates:
 
 - [`personal-website-template`](https://github.com/YOUR-ORG/personal-website-template)
 - [`analysis-repo-template`](https://github.com/YOUR-ORG/analysis-repo-template)
+- [`research-standards`](https://github.com/YOUR-ORG/research-standards): shared Claude rules, skills and checks, installed in all of the above
 
 ## Why a Pages site (and not a wiki or README)?
 
@@ -23,7 +25,7 @@ Companion templates:
   a separate repository, with no pull requests or Actions.
 - **It's tested.** The same link checker the participants use runs on these
   pages, which gives you a working example to point at.
-- **Navigation and search.** The course has eight modules and a reference
+- **Navigation and search.** The course has nine modules and a reference
   section. A single README gets unwieldy.
 - **Anyone can suggest fixes:** participants open an Issue or a pull request.
 

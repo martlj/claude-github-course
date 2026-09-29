@@ -39,7 +39,10 @@ when the paper comes out, and link it from your website and the methods section.
 
 ```
 ├── README.md            what, why, how to run          → the first thing anyone reads
-├── CLAUDE.md            rules for Claude                → consistent, good-practice changes
+├── CLAUDE.md            project facts for Claude         → Claude knows what this project is
+├── STANDARDS.md         the shared lab standards         → same rules in every project (module 7)
+├── CONTRIBUTING.md      how collaborators work           → everyone works the same way
+├── .claude/             shared rules and skills          → Claude follows them automatically
 ├── CHANGELOG.md         what changed, by version        → which version made Figure 3?
 ├── CITATION.cff         how to cite                     → a "Cite this repository" button
 ├── LICENSE              how others may reuse it         → no licence means nobody can legally reuse it
@@ -53,7 +56,7 @@ when the paper comes out, and link it from your website and the methods section.
 ├── docs/decisions.md    dated analysis decisions        → why Otsu? why 30 px?
 ├── docs/methods.md      methods text for the paper
 ├── tests/               automated checks
-└── .github/             tests workflow, issue & PR templates
+└── .github/             tests & standards checks, issue & PR templates
 ```
 
 {: .concept }
@@ -72,7 +75,8 @@ when the paper comes out, and link it from your website and the methods section.
 > > Ask me for anything you don't know. Don't make things up.
 >
 > Notice that Claude should *ask* you for the data location and your ORCID
-> rather than inventing them.
+> rather than inventing them. That's the rule "never invent facts" in
+> `.claude/rules/01-working-with-researchers.md` at work.
 
 ## Get it onto your computer (for Fiji)
 
@@ -114,4 +118,4 @@ stops your copy and the GitHub copy from drifting apart.
 > ❌ twice: the macro has no header, and it has a hard-coded path. Read the
 > failure messages. They tell you how to fix it. Then ask Claude:
 >
-> > The tests are failing on quick_test.ijm. Fix it following the conventions in CLAUDE.md.
+> > The tests are failing on quick_test.ijm. Fix it following our standards.
