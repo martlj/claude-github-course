@@ -1,0 +1,6 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+lychee/
+.DS_Store
+_check/

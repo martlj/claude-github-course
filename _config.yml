@@ -1,0 +1,50 @@
+title: Claude + GitHub for Biologists
+description: A hands-on course on version control, GitHub Pages and working with Claude, for researchers with no coding background.
+
+# ⚠️ Must match the repository name (the site lives at USERNAME.github.io/REPO-NAME)
+baseurl: "/claude-github-course"
+url: ""
+
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+aux_links:
+  "Website template":
+    - "https://github.com/YOUR-ORG/personal-website-template"
+  "Analysis template":
+    - "https://github.com/YOUR-ORG/analysis-repo-template"
+
+footer_content: "Materials licensed CC BY 4.0. Found a mistake? <a href=\"https://github.com/YOUR-ORG/claude-github-course/issues\">Open an issue</a>."
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  tip:
+    title: Tip
+    color: green
+  warning:
+    title: Watch out
+    color: red
+  exercise:
+    title: Exercise
+    color: purple
+  concept:
+    title: Key idea
+    color: yellow
+
+exclude:
+  - README.md
+  - CLAUDE.md
+  - .lycheeignore
+  - lychee
+  - _check
+  - LICENSE.md

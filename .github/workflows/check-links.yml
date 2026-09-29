@@ -1,0 +1,89 @@
+# ------------------------------------------------------------------
+# AUTOMATED TEST: are all the links on my website still working?
+#
+# When it runs:
+#   - every time you push a change to the main branch
+#   - on every pull request (so you find out BEFORE merging)
+#   - every Monday at 07:00 UTC (because other people's websites move)
+#   - whenever you press "Run workflow" on the Actions tab
+#
+# What it does:
+#   1. Builds your site exactly as GitHub Pages does.
+#   2. Visits every link on every page (internal pages and external URLs).
+#   3. If anything is broken, the run goes red (❌) and, except on pull
+#      requests, it opens a GitHub Issue listing the broken links (or adds
+#      a comment to the issue if one is already open).
+# ------------------------------------------------------------------
+name: Check links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the files from the repository
+        uses: actions/checkout@v4
+
+      - name: Read baseurl from _config.yml
+        id: base
+        run: |
+          baseurl=$(grep -E '^baseurl:' _config.yml | sed -E 's/^baseurl: *"?([^"]*)"?.*/\1/')
+          echo "baseurl=$baseurl" >> "$GITHUB_OUTPUT"
+
+      - name: Build the website (same as GitHub Pages)
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      # This is a "project" site served from /REPO-NAME/, so put the built
+      # files in a matching sub-folder for the checker to resolve links.
+      - name: Arrange the built site like the real web address
+        run: |
+          mkdir -p "_check${{ steps.base.outputs.baseurl }}"
+          cp -r _site/. "_check${{ steps.base.outputs.baseurl }}/"
+
+      - name: Check every link
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --root-dir "${{ github.workspace }}/_check"
+            --no-progress
+            --max-retries 3
+            --accept 200,206,429
+            "_check/**/*.html"
+          fail: false
+
+      - name: Open (or update) an issue listing the broken links
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create broken-links --color d73a4a \
+            --description "Found by the automated link checker" --force
+          existing=$(gh issue list --label broken-links --state open \
+                       --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file ./lychee/out.md
+          else
+            gh issue create --title "Broken links found in the course materials" \
+              --label broken-links --body-file ./lychee/out.md
+          fi
+
+      - name: Mark this run as failed if links are broken
+        if: steps.lychee.outputs.exit_code != 0
+        run: |
+          echo "::error::Broken links found. See the 'Check every link' step above, or the issue that was opened."
+          exit 1
