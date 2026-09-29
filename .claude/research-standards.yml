@@ -1,6 +1,6 @@
 # Which shared standards this project follows. Managed by install.py /
 # the update-standards skill. You may change 'profile' and 'strict'.
-source: "https://github.com/YOUR-ORG/research-standards"
+source: "https://github.com/martlj/research-standards"
 version: "1.0.0"
 profile: course   # general | analysis | website | course
 strict: false    # true = edited shared files fail the standards check

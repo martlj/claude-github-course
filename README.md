@@ -1,6 +1,6 @@
 # Claude + GitHub for Biologists: course materials
 
-Source for the course website: **https://YOUR-ORG.github.io/claude-github-course/**
+Source for the course website: **https://martlj.github.io/claude-github-course/**
 
 A hands-on course teaching researchers with little or no coding experience to:
 
@@ -14,9 +14,9 @@ A hands-on course teaching researchers with little or no coding experience to:
 
 Companion templates:
 
-- [`personal-website-template`](https://github.com/YOUR-ORG/personal-website-template)
-- [`analysis-repo-template`](https://github.com/YOUR-ORG/analysis-repo-template)
-- [`research-standards`](https://github.com/YOUR-ORG/research-standards): shared Claude rules, skills and checks, installed in all of the above
+- [`claude-website-template`](https://github.com/martlj/claude-website-template)
+- [`analysis-repo-template`](https://github.com/martlj/analysis-repo-template)
+- [`research-standards`](https://github.com/martlj/research-standards): shared Claude rules, skills and checks, installed in all of the above
 
 ## Why a Pages site (and not a wiki or README)?
 

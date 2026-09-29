@@ -18,7 +18,7 @@ first commit by hand, so you know what Claude will be doing for you later.
 
 ## Create your repository from the template
 
-1. Open the [personal website template](https://github.com/YOUR-ORG/personal-website-template).
+1. Open the [personal website template](https://github.com/martlj/claude-website-template).
 2. Click the green **Use this template** button, then **Create a new repository**.
 3. **Owner:** you. **Repository name:** `YOUR-USERNAME.github.io`, with your
    username exactly as it appears, in lower case.

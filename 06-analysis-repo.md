@@ -30,7 +30,7 @@ when the paper comes out, and link it from your website and the methods section.
 
 ## Create it
 
-1. Open the [analysis repository template](https://github.com/YOUR-ORG/analysis-repo-template).
+1. Open the [analysis repository template](https://github.com/martlj/analysis-repo-template).
 2. **Use this template → Create a new repository**. Name it after the project,
    e.g. `nuclear-size-screen`. Choose **Private**.
 3. **Route A:** add the new repository to the Claude GitHub app's allowed list.

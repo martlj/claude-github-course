@@ -51,7 +51,7 @@ Claude and GitHub.
 {: .note }
 Menus and button names in Claude and GitHub change from time to time. If
 something here doesn't match what you see, look for the nearest equivalent,
-or [open an issue](https://github.com/YOUR-ORG/claude-github-course/issues) on
+or [open an issue](https://github.com/martlj/claude-github-course/issues) on
 this course so it can be fixed.
 
 ## Optional: install software on your own computer

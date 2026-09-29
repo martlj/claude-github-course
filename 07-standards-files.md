@@ -44,7 +44,7 @@ it does anything**. They work like the SOPs and protocol book of a lab.
 ## The research-standards kit
 
 All our templates come with the same kit already installed, from the
-[research-standards](https://github.com/YOUR-ORG/research-standards) repository.
+[research-standards](https://github.com/martlj/research-standards) repository.
 Open `STANDARDS.md` in your analysis repository for the overview.
 
 **Rules (always on):** working with researchers · Git and GitHub · data management ·
@@ -143,14 +143,14 @@ Because every project carries the same files:
 - **New project:** start from a template. The standards are already there.
 - **Existing repository or folder of macros:**
 
-  > Install the research standards from https://github.com/YOUR-ORG/research-standards
+  > Install the research standards from https://github.com/martlj/research-standards
   > into this repository with the "analysis" profile. Then run /apply-standards and
   > show me the plan before changing anything.
 
 ## Route B: Claude chat
 
 Claude chat doesn't read repository files by itself. Set up a **claude.ai
-Project** once, using the kit's [chat setup guide](https://github.com/YOUR-ORG/research-standards/blob/main/docs/claude-chat-setup.md):
+Project** once, using the kit's [chat setup guide](https://github.com/martlj/research-standards/blob/main/docs/claude-chat-setup.md):
 upload `standards-for-claude-chat.md` (all the rules and procedures in one file)
 and your project's `CLAUDE.md`, and paste in the suggested project instructions.
 Share the Project with collaborators.

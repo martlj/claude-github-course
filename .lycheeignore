@@ -2,7 +2,7 @@
 # Add a site here only if it blocks automated checkers but works fine
 # in a browser (LinkedIn is the classic example).
 ^mailto:
-github\.com/YOUR-ORG
+github\.com/martlj
 YOUR-USERNAME
 linkedin\.com
 claude\.ai

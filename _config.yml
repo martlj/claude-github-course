@@ -18,13 +18,13 @@ back_to_top_text: "Back to top"
 
 aux_links:
   "Website template":
-    - "https://github.com/YOUR-ORG/personal-website-template"
+    - "https://github.com/martlj/claude-website-template"
   "Analysis template":
-    - "https://github.com/YOUR-ORG/analysis-repo-template"
+    - "https://github.com/martlj/analysis-repo-template"
   "Research standards":
-    - "https://github.com/YOUR-ORG/research-standards"
+    - "https://github.com/martlj/research-standards"
 
-footer_content: "Materials licensed CC BY 4.0. Found a mistake? <a href=\"https://github.com/YOUR-ORG/claude-github-course/issues\">Open an issue</a>."
+footer_content: "Materials licensed CC BY 4.0. Found a mistake? <a href=\"https://github.com/martlj/claude-github-course/issues\">Open an issue</a>."
 
 callouts:
   note:

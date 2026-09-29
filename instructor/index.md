@@ -17,13 +17,14 @@ permalink: /instructor/
 1. **Create a GitHub organisation** for the course or the institute (e.g. `crick-claude-course`).
    Put the four repositories in it:
    - `claude-github-course` (this site)
-   - `personal-website-template`
+   - `claude-website-template`
    - `analysis-repo-template`
    - `research-standards` (the shared rules and skills). **Tag a release** `v1.0.0`, because projects are notified of new tags
 2. In each template repository, go to **Settings** and tick **Template repository**.
-3. Replace every `YOUR-ORG` in this course (`_config.yml` and the module pages).
-   Ask Claude: *"Replace YOUR-ORG with crick-claude-course throughout this repository."*
-   Then remove the `github\.com/YOUR-ORG` line from `.lycheeignore`, so those links get checked too.
+3. Links currently point to the `martlj` account. If you move the repositories to an organisation,
+   ask Claude: *"Replace martlj with crick-claude-course throughout this repository"* (including each
+   `.claude/research-standards.yml`). While the repositories are private, `.lycheeignore` skips
+   `github.com/martlj` links, because private pages look broken to the link checker. Remove that line once they're public.
 4. Turn on Pages for this repository (**Settings → Pages → Deploy from a branch → main / root**).
    If you rename the repository, update `baseurl` in `_config.yml`.
 5. **Do a dry run with a fresh GitHub account.** Menus change. Update the pages where they differ.
