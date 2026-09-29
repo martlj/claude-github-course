@@ -9,7 +9,7 @@ paths:
   - "python/**"
   - "notebooks/**"
 ---
-<!-- research-standards v1.0.0. Shared standard: don't edit in a project; propose changes to the research-standards repository. -->
+<!-- research-standards v1.1.0. Shared standard: don't edit in a project; propose changes to the research-standards repository. -->
 
 # Image analysis practice
 

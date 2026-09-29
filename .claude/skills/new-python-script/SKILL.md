@@ -2,7 +2,7 @@
 name: new-python-script
 description: Create a new Python analysis script that follows the lab standards, with testable functions, a command-line interface, docstrings, dependencies in environment.yml and known-answer tests. Use when asked to write a Python script, convert a Fiji macro or notebook to Python, or batch-process data in Python.
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Create a Python analysis script
 

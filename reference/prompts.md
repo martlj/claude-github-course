@@ -13,7 +13,7 @@ Copy, paste, adapt.
 
 `/start-analysis` · `/new-fiji-macro` · `/new-python-script` · `/add-known-answer-test` ·
 `/log-decision` · `/review-changes` · `/prepare-release` · `/apply-standards` ·
-`/update-standards` · `/progress-summary`
+`/update-standards` · `/progress-summary` · `/propose-standards-change`
 
 ## Getting started in a repository
 
@@ -22,6 +22,7 @@ Copy, paste, adapt.
 - *What standards are you following here, and where do they come from?*
 - *Install the research standards into this repository with the analysis profile, then /apply-standards.*
 - *Add an exception to CLAUDE.md: …*
+- */propose-standards-change I think every project should …*
 
 ## Asking for a change
 

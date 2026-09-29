@@ -2,7 +2,7 @@
 name: progress-summary
 description: Summarise recent progress in the repository (commits, merged pull requests, closed and open issues, decisions logged) in plain language for a PI, lab meeting or collaborator. Use when asked what changed, what was done this week or month, or for a status update.
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Progress summary
 

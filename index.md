@@ -34,7 +34,7 @@ do the fiddly parts. No coding experience needed.
 | [4. Changing things with Claude]({{ '/04-prompting/' | relative_url }}) | Change colours, layout and content by describing what you want | 40 min |
 | [5. Testing]({{ '/05-testing/' | relative_url }}) | Break a link on purpose and watch the automated test catch it | 25 min |
 | [6. Your analysis repository]({{ '/06-analysis-repo/' | relative_url }}) | Set up a repository for your macros and scripts | 30 min |
-| [7. Standards files]({{ '/07-standards-files/' | relative_url }}) | Learn how a few Markdown files make Claude follow good practice, in every project and for every collaborator | 40 min |
+| [7. Standards files]({{ '/07-standards-files/' | relative_url }}) | Learn how a few Markdown files make Claude follow good practice, in every project and for every collaborator, and propose improvements to them | 60 min |
 | [8. Image analysis with Claude]({{ '/08-image-analysis/' | relative_url }}) | Write and test a Fiji macro together with Claude | 45 min |
 | [9. Project management]({{ '/09-project-management/' | relative_url }}) | Track your work with Issues and a Project board | 25 min |
 

@@ -2,7 +2,7 @@
 name: log-decision
 description: Record an analysis decision (threshold, parameter, exclusion rule, method choice, tolerance change) as a dated entry in docs/decisions.md. Use whenever a choice that affects results is made or changed, or when the researcher says "note that down".
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Log an analysis decision
 

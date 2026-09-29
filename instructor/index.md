@@ -70,6 +70,28 @@ permalink: /instructor/
 - Collect suggestions from participants as issues on `research-standards`. It's a good way
   to show collaborative maintenance in action.
 
+## Running the proposals exercise (module 7, exercise 4)
+
+**Before the session**
+- Participants need to be able to open issues on `research-standards`. Either make it
+  public, or add participants as collaborators with the **Triage** role (they can open and
+  label issues, but can't change files).
+- Create the labels from `MAINTAINING.md` (`proposal`, `needs-info`, `discussion`, `accepted`,
+  `project-exception`, `later`, `declined`, `duplicate`). You can ask Claude to do it in that repository.
+- Skim the seed ideas at the end of `MAINTAINING.md`, so you can nudge people who are stuck.
+
+**During the session (about 25 minutes)**
+- 10 min: everyone drafts and submits a proposal with `/propose-standards-change`.
+- 5 min: read and react to two other proposals.
+- 10 min: live triage of two or three proposals (accept, redirect to a project exception,
+  decline or park), showing the labels and the kind of reply in `MAINTAINING.md`.
+
+**After the session**
+- Reply to every proposal within about two weeks, with a reason.
+- Bundle accepted changes into a release (e.g. v1.2.0). Participants then see the
+  *"update available"* issue arrive in their own repositories, which closes the loop nicely
+  at the follow-up clinic.
+
 ## Demonstrations that work well
 
 - **Live-break the site:** put a YAML indentation error in `_config.yml`, show the

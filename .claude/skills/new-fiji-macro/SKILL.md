@@ -2,7 +2,7 @@
 name: new-fiji-macro
 description: Create a new Fiji/ImageJ macro (.ijm) that follows the lab standards, including a header, script parameters, batch processing, CSV and QC outputs, and a test. Use when asked to write, convert or tidy up a Fiji macro, including from Macro Recorder output.
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Create a Fiji macro
 

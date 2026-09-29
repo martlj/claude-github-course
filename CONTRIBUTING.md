@@ -1,6 +1,6 @@
 # Contributing
 
-<!-- research-standards v1.0.0. Shared file: don't edit in a project. -->
+<!-- research-standards v1.1.0. Shared file: don't edit in a project. -->
 
 Thanks for helping with this project. We follow shared research standards
 (see [`STANDARDS.md`](STANDARDS.md)), so the way of working is the same as in

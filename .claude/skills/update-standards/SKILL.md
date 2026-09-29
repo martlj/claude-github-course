@@ -3,7 +3,7 @@ name: update-standards
 description: Install or update the shared research-standards files (.claude/rules, .claude/skills, CONTRIBUTING.md, templates) in this repository from the upstream research-standards repository.
 disable-model-invocation: true
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Install or update the shared standards
 

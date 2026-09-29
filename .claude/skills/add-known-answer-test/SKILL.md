@@ -2,7 +2,7 @@
 name: add-known-answer-test
 description: Add an automated test that checks analysis code against synthetic or reference data with a known correct answer. Use when new analysis code is written, when a bug is fixed (to stop it coming back), or when asked "how do we know this is right?".
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Add a known-answer test
 

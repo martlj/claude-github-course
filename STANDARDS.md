@@ -1,6 +1,6 @@
 # Research standards
 
-<!-- research-standards v1.0.0. Shared file: don't edit in a project. -->
+<!-- research-standards v1.1.0. Shared file: don't edit in a project. -->
 
 This repository follows a shared set of **research standards**: the same
 rules, checks and Claude instructions used across all our projects. That way
@@ -56,6 +56,7 @@ These load only when Claude works on matching files:
 | `/apply-standards` | Audit an existing or messy project and plan how to tidy it |
 | `/update-standards` | Install the latest version of these standards |
 | `/progress-summary` | Summarise recent work for your PI or a lab meeting |
+| `/propose-standards-change` | Suggest an improvement to these standards (drafts an issue for the maintainers) |
 
 Claude also picks the right skill by itself when your request matches, so you
 don't have to remember the names.
@@ -70,6 +71,12 @@ the next update would overwrite them.
 
 ## Suggesting a change to the standards
 
-Open an issue or pull request on the **research-standards** repository (the
-address is in `.claude/research-standards.yml`). Once a new version is
-released, every project gets an automatic issue offering the update.
+Ask Claude **`/propose-standards-change`**. It checks whether the idea is
+already covered, helps you decide whether it belongs in the shared standards or
+only in this project's `CLAUDE.md`, and drafts an issue for the
+**research-standards** repository (the address is in `.claude/research-standards.yml`).
+You can also fill in the *Propose a change* form there yourself.
+
+Maintainers review every proposal and reply with a decision and a reason. Not
+every proposal is accepted, and that's normal. When accepted changes are
+released as a new version, every project gets an automatic issue offering the update.

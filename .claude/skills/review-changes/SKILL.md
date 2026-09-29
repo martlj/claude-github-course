@@ -2,7 +2,7 @@
 name: review-changes
 description: Review a set of changes (a branch, pull request or uncommitted work) against the lab standards before merging, and report problems in plain language. Use when asked to review or check changes, before opening a pull request, or when asked "is this ready?".
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Review changes before merging
 

@@ -35,4 +35,7 @@ permalink: /reference/glossary/
 | **Rule** (`.claude/rules/`) | A shared standard that Claude loads automatically, sometimes only for certain file types |
 | **Skill** (`.claude/skills/`) | A step-by-step procedure Claude follows when relevant, or when you type `/name` |
 | **Research standards** | Our shared set of rules, skills, templates and checks, copied into every project |
+| **Upstream** | The original repository something is copied from. For the standards, that's `research-standards` |
+| **Maintainer** | A person who looks after a repository: reviews proposals and pull requests, and makes releases |
+| **Proposal** | An issue suggesting a change to the standards. It may be accepted, adapted, redirected or declined |
 | **Release / tag** | A named version (e.g. `v1.0.0`), such as the one used in a paper |

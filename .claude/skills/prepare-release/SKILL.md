@@ -3,7 +3,7 @@ name: prepare-release
 description: Prepare a tagged release of an analysis repository, for example for a paper submission, thesis or report, covering the version, changelog, citation and methods text.
 disable-model-invocation: true
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Prepare a release
 

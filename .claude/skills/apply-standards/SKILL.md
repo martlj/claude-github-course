@@ -2,7 +2,7 @@
 name: apply-standards
 description: Audit an existing project folder or repository against the lab standards and propose a step-by-step plan to bring it in line (structure, missing files, data in Git, hard-coded paths, missing tests). Use when someone brings an existing or messy project, or asks "does this follow our standards?".
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Apply the standards to an existing project
 

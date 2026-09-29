@@ -2,7 +2,7 @@
 name: start-analysis
 description: Plan a new image or data analysis with a researcher before any code is written. Use when someone describes a new analysis they want ("I want to count...", "measure...", "quantify...") or asks where to start.
 ---
-<!-- research-standards v1.0.0 -->
+<!-- research-standards v1.1.0 -->
 
 # Start a new analysis
 
