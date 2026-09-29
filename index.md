@@ -12,7 +12,7 @@ Keep your analysis code safe, shareable and reproducible, and use Claude to
 do the fiddly parts. No coding experience needed.
 {: .fs-6 .fw-300 }
 
-[Start with setup]({{ '/01-setup/' | relative_url }}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Start here: before the course]({{ '/01-setup/' | relative_url }}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Prompt cheat-sheet]({{ '/reference/prompts/' | relative_url }}){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
@@ -28,7 +28,7 @@ do the fiddly parts. No coding experience needed.
 
 | Module | You will… | Time |
 |--------|-----------|------|
-| [1. Setup]({{ '/01-setup/' | relative_url }}) | Create a GitHub account and connect it to Claude | 20 min (before the session) |
+| [1. Before the course]({{ '/01-setup/' | relative_url }}) | Choose a good username, create your GitHub account, connect Claude, and (optionally) read a gentle introduction to version control | 30 min + optional reading (before the session) |
 | [2. Version control]({{ '/02-version-control/' | relative_url }}) | Learn the six ideas you actually need | 20 min |
 | [3. Your website]({{ '/03-website/' | relative_url }}) | Create your site from the template and make your first commit | 25 min |
 | [4. Changing things with Claude]({{ '/04-prompting/' | relative_url }}) | Change colours, layout and content by describing what you want | 40 min |

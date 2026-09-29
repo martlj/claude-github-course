@@ -37,7 +37,7 @@ permalink: /instructor/
 
 - Collect GitHub usernames. Add participants to the organisation (they can then
   use the templates even if you make them private).
-- Send module 1 as homework. Budget 10 minutes at the start to rescue people who didn't do it.
+- Send module 1 (*Before the course*) as homework at least a week ahead. The username guidance matters, because usernames end up in website addresses. Budget 10 minutes at the start to rescue people who didn't do it.
 - Have 2–3 helpers for 15–20 participants. The bottlenecks are account set-up and 2FA.
 
 ## Suggested timings
