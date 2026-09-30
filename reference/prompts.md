@@ -7,7 +7,8 @@ permalink: /reference/prompts/
 
 # Prompt cheat-sheet
 
-Copy, paste, adapt.
+Copy, paste, adapt. For what the jargon means, see the
+[AI terms cheat-sheet]({{ '/reference/ai-terms/' | relative_url }}).
 
 ## Skills (Claude Code: type `/` to see them all)
 

@@ -1,11 +1,14 @@
 ---
 title: Glossary
 parent: Reference
-nav_order: 2
+nav_order: 3
 permalink: /reference/glossary/
 ---
 
 # Glossary
+
+Git and GitHub words. For AI words (tokens, context, models, prompts), see the
+[AI terms cheat-sheet]({{ '/reference/ai-terms/' | relative_url }}).
 
 | Term | Meaning |
 |------|---------|

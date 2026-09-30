@@ -171,6 +171,12 @@ You don't need to know any of this before the course. We cover everything from
 scratch in [module 2]({{ '/02-version-control/' | relative_url }}). But a little
 reading beforehand makes the sessions much easier to follow. Pick a level:
 
+{: .tip }
+> Not about Git, but useful before you start: the course's
+> [AI terms cheat-sheet]({{ '/reference/ai-terms/' | relative_url }}) explains tokens,
+> context, model versions, memory and what separates a good prompt from a bad one.
+> Ten minutes, and it makes the rest of the course make more sense.
+
 ### ⏱ 15 minutes: why bother?
 
 - **Jenny Bryan, [*Excuse me, do you have a moment to talk about version control?*](https://peerj.com/preprints/3159/)**

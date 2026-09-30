@@ -118,6 +118,12 @@ screens, an embedded map to your institute, a table of lab members.
 
 ## Prompting well
 
+{: .tip }
+The [AI terms cheat-sheet]({{ '/reference/ai-terms/' | relative_url }}) explains
+tokens, context, model versions and memory, and has a longer side-by-side of weak
+and strong prompts. Worth ten minutes at some point.
+
+
 | Instead of… | Try… | Why |
 |-------------|------|-----|
 | "Make it look nicer" | "Make the header more compact and use a warmer colour scheme. Show me 3 options first." | Vague requests get random results. Asking for options keeps you in charge |

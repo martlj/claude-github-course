@@ -13,7 +13,8 @@ do the fiddly parts. No coding experience needed.
 {: .fs-6 .fw-300 }
 
 [Start here: before the course]({{ '/01-setup/' | relative_url }}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Prompt cheat-sheet]({{ '/reference/prompts/' | relative_url }}){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Prompt cheat-sheet]({{ '/reference/prompts/' | relative_url }}){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[AI terms]({{ '/reference/ai-terms/' | relative_url }}){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
